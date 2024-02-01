@@ -1,0 +1,40 @@
+.container {
+  max-width: 280px;
+}
+.card-container {
+  gap: 20px;
+}
+.card {
+  border: 2px solid #ededed;
+  height: 335px;
+  transition: 0.3s ease-in-out;
+}
+.card.active,
+.card:hover {
+  height: 335px;
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top, #b52519, #ededed 80%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0px 10px 5px 0px rgba(237, 237, 237, 1);
+}
+.card-icon > div {
+  border-radius: 50px;
+}
+.card-checklist {
+  gap: 7px;
+}
+.card-checklist > div {
+  gap: 5px;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 500px !important;
+    margin: 0 auto;
+  }
+  .card-section {
+    height: 100vh !important;
+  }
+}
